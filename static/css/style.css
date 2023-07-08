@@ -1,0 +1,144 @@
+
+body {
+    background-color: #2B3035ff;
+    color: #fff; /* Set all text to white */
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+color: #ffffff;
+font-size: 32px;
+font-weight: bold;
+}
+
+.container {
+    margin-top: 40px;
+    background-color: #2B3035ff;
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+.note-container {
+    margin-bottom: 30px;
+    background-color: #212529;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.note-container:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0);
+}
+
+.important-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.not-important-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.note-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.note-important {
+    color: red;
+    font-weight: bold;
+    margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.note-description {
+    margin-top: 10px;
+}
+
+.no-notes {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.accordion {
+    background-color: #2B3035ff;
+    margin-top: 20px;
+}
+
+.accordion-item {
+    border-color: #2B3035ff;
+}
+
+.accordion-button {
+    color: #ffffff;
+    background-color: #2B3035ff;
+}
+
+.accordion-body {
+    background-color: #2B3035ff;
+    color: #ffffff;
+}
+
+input#title {
+background-color: #2B3035ff;
+color: #fff;
+border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* Add the following styles for the description textarea */
+textarea#desc {
+background-color: #2B3035ff;
+color: #fff;
+border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* Add the following styles for the important checkbox label */
+.form-check-label[for="exampleCheck1"] {
+color: #fff;
+}
+
+/* Add the following styles to change the caret color for all inputs */
+input,
+textarea {
+caret-color: #fff;
+}
+
+/* Add the following styles to change the caret color specifically for the important checkbox */
+input#exampleCheck1 {
+background-color: #2B3035ff;
+caret-color: #fff;
+border: 1px solid #000;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .note-container {
+        padding: 10px;
+    }
+    .note-title {
+        font-size: 20px;
+    }
+}
